@@ -1,0 +1,22 @@
+{
+  "name": "hyperf-wgy/excel",
+  "description": "hyperf excel",
+  "authors": [
+    {
+      "name": "wanggaoyang",
+      "email": "836259740@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "phpoffice/phpspreadsheet": "^1.19",
+    "ext-iconv": "*",
+    "ext-imagick": "*",
+    "hyperf/http-server": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wgy\\Excel\\": "src/"
+    }
+  }
+}
