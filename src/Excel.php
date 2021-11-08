@@ -12,15 +12,21 @@ class Excel
 {
 
     /**
+     *  使用示例
+     *  $data =[
+     *       ['field1' => 11111,'field2' => 22222],
+     *       ['field1' => 111111,'field2' => 222222],
+     *  ];
+     *  $field = ['标题1' => 'field1','标题2' => 'field2']
+     *  make(Excel::class)->export($data, $field, './runtime/excel/' . date('y-m-d'), '测试数据.xlsx');
+     *
+     *
      * @param array $data
-     * @param array $fileheader
+     * @param array $field //$field = ['标题1' => '数据字段1','标题2' => '数据字段2']
      * @param string $save_path
      * @param string $file_name
-     * @param string $sheetname
-     * @param array $data_style
      * @param array $properties
      * @return \Psr\Http\Message\ResponseInterface
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
      * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
      * @author wgy
      */
