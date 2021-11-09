@@ -7,6 +7,12 @@
       "email": "836259740@qq.com"
     }
   ],
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "hyperf",
+    "excel"
+  ],
   "require": {
     "php": ">=7.4",
     "phpoffice/phpspreadsheet": "^1.19",
